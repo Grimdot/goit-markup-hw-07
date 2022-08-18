@@ -459,69 +459,68 @@
 
       <div data-modal class="backdrop is-hidden">
         <div class="modal">
-          <button data-modal-close type="button" class="btn modal-close">
-            <svg class="close-icon">
+          <button data-modal-close type="button" class="btn modal__close-btn">
+            <svg class="modal__close-icon">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
 
-          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+          <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
 
           <form name="call_back_form">
-            <label class="modal-label">
-              <span class="label-name">Ім'я</span>
-              <div class="input-area">
-                <input type="name" name="call-back-name" class="modal-input" />
-                <svg class="modal-icon">
-                  <use href="./images/icons.svg#icon-name"></use>
-                </svg>
-              </div>
+            <label for="name" class="modal__label">
+              <span class="modal__label-name">Ім'я</span>
             </label>
+            <div class="modal__input-area">
+              <input id="name" type="text" name="call-back-name" class="modal__input" />
+              <svg class="modal__input-icon">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
 
-            <label class="modal-label">
-              <span class="label-name">Телефон</span>
-              <div class="input-area">
-                <input type="tel" name="call-back-tel" class="modal-input" />
-                <svg class="modal-icon">
-                  <use href="./images/icons.svg#icon-tel"></use>
-                </svg>
-              </div>
+            <label for="tel" class="modal__label">
+              <span class="modal__label-name">Телефон</span>
             </label>
+            <div class="modal__input-area">
+              <input id="tel" type="tel" name="call-back-tel" class="modal__input" />
+              <svg class="modal__input-icon">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
 
-            <label class="modal-label">
-              <span class="label-name">Пошта</span>
-              <div class="input-area">
-                <input type="mail" name="call-back-email" class="modal-input" />
-                <svg class="modal-icon">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-              </div>
+            <label for="mail" class="modal__label">
+              <span class="modal__label-name">Пошта</span>
             </label>
+            <div class="modal__input-area">
+              <input id="mail" type="email" name="call-back-email" class="modal__input" />
+              <svg class="modal__input-icon">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
 
-            <label class="modal-label">
-              <span class="label-name">Коментар</span>
+            <label class="modal__label">
+              <span class="modal__label-name">Коментар</span>
               <textarea
-                name="comment"
+                name="call-back-name-comment"
                 rows="10"
-                name="call-back-сomment"
-                class="comment-area"
+                class="modal__comment-area"
                 placeholder="Введіть текст"
               ></textarea>
             </label>
 
-            <label class="terms">
+            <label class="modal__terms">
               <input
                 type="checkbox"
                 name="terms"
                 value="agree"
                 class="terms-checkbox visually-hidden"
               />
-              <span class="checkbox-icon"></span>
+              <span class="modal__checkbox-icon"></span>
               Погоджуюся з розсилкою та приймаю
-              <a href="" class="link terms-link">Умови договору</a>
+              <a href="" class="link modal__terms-link">Умови договору</a>
             </label>
 
-            <button type="submit" class="btn modal-submit main-btn">Відправити</button>
+            <button type="submit" class="btn modal__submit-btn main-btn">Відправити</button>
           </form>
         </div>
       </div>

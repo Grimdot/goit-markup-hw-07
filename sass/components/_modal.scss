@@ -26,7 +26,7 @@
   border-radius: 4px;
 }
 
-.modal-close {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -48,19 +48,30 @@
   }
 }
 
-.close-icon {
+.modal__close-icon {
   width: 18px;
   height: 18px;
 }
 
-.modal-title {
+.modal__title {
   margin-bottom: 12px;
 
   @include font(20px, 700, 1.15, null);
   text-align: center;
 }
 
-.modal-input {
+.modal__label {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+
+  @include font(12px, null, 1.17, 00.01em);
+  text-align: left;
+}
+
+.modal__input {
   display: block;
 
   width: 100%;
@@ -79,27 +90,18 @@
   }
 }
 
-.modal-label {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-
-  @include font(12px, null, 1.17, 00.01em);
-  text-align: left;
-}
-
-.label-name {
+.modal__label-name {
   display: block;
 
   margin-bottom: 4px;
   color: $secondary-color;
 }
 
-.input-area {
+.modal__input-area {
   position: relative;
 }
 
-.modal-icon {
+.modal__input-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -110,12 +112,12 @@
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .modal-input:focus + & {
+  .modal__input:focus + & {
     fill: $accent-color;
   }
 }
 
-.comment-area {
+.modal__comment-area {
   width: 100%;
   height: 120px;
   margin-bottom: 20px;
@@ -129,14 +131,14 @@
   &:focus {
     border: 1px solid $accent-color;
   }
+
+  &::placeholder {
+    @include font(12px, null, 1.17, 0.01em);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
-.modal-comment::placeholder {
-  @include font(12px, null, 1.17, 0.01em);
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.terms {
+.modal__terms {
   display: flex;
   margin-bottom: 30px;
 
@@ -147,7 +149,7 @@
   color: $secondary-color;
 }
 
-.checkbox-icon {
+.modal__checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -156,7 +158,7 @@
   border: 2px solid $main-color;
   border-radius: 2px;
 
-  .terms-checkbox:checked + & {
+  .modal__terms:checked + & {
     width: 16px;
     height: 15px;
 
@@ -169,12 +171,12 @@
   }
 }
 
-.terms-link {
+.modal__terms-link {
   margin-left: 0.25em;
   text-decoration: underline;
   color: $accent-color;
 }
 
-.modal-submit {
+.modal__submit-btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

@@ -154,7 +154,7 @@ img {
   border-radius: 4px;
 }
 
-.modal-close {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -168,16 +168,16 @@ img {
   justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover, .modal-close:focus {
+.modal__close-btn:hover, .modal__close-btn:focus {
   fill: #2196f3;
 }
 
-.close-icon {
+.modal__close-icon {
   width: 18px;
   height: 18px;
 }
 
-.modal-title {
+.modal__title {
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: 700;
@@ -185,7 +185,18 @@ img {
   text-align: center;
 }
 
-.modal-input {
+.modal__label {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.modal__input {
   display: block;
   width: 100%;
   height: 40px;
@@ -197,31 +208,21 @@ img {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus {
+.modal__input:focus {
   border: 1px solid #2196f3;
 }
 
-.modal-label {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  text-align: left;
-}
-
-.label-name {
+.modal__label-name {
   display: block;
   margin-bottom: 4px;
   color: #757575;
 }
 
-.input-area {
+.modal__input-area {
   position: relative;
 }
 
-.modal-icon {
+.modal__input-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -231,11 +232,11 @@ img {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus + .modal-icon {
+.modal__input:focus + .modal__input-icon {
   fill: #2196f3;
 }
 
-.comment-area {
+.modal__comment-area {
   width: 100%;
   height: 120px;
   margin-bottom: 20px;
@@ -245,18 +246,17 @@ img {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.comment-area:focus {
+.modal__comment-area:focus {
   border: 1px solid #2196f3;
 }
-
-.modal-comment::placeholder {
+.modal__comment-area::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.terms {
+.modal__terms {
   display: flex;
   margin-bottom: 30px;
   align-items: center;
@@ -266,7 +266,7 @@ img {
   color: #757575;
 }
 
-.checkbox-icon {
+.modal__checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -274,7 +274,7 @@ img {
   border: 2px solid #212121;
   border-radius: 2px;
 }
-.terms-checkbox:checked + .checkbox-icon {
+.modal__terms:checked + .modal__checkbox-icon {
   width: 16px;
   height: 15px;
   background: #2196f3;
@@ -285,13 +285,13 @@ img {
   border: 2px solid #2196f3;
 }
 
-.terms-link {
+.modal__terms-link {
   margin-left: 0.25em;
   text-decoration: underline;
   color: #2196f3;
 }
 
-.modal-submit {
+.modal__submit-btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -779,7 +779,7 @@ img {
   margin-right: 8px;
 }
 
-.filter-btn {
+.examples__filter-btn {
   padding: 6px 22px;
   font-size: 16px;
   font-weight: 500;
@@ -788,7 +788,7 @@ img {
   background-color: #f5f4fa;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-btn:hover, .filter-btn:focus {
+.examples__filter-btn:hover, .examples__filter-btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
