@@ -1,13 +1,14 @@
 @import './utils/vars';
 @import './base/reset';
+@import './utils/mixins';
 @import './base/common';
 @import './utils/hidden';
-@import './utils/mixins';
 
 @import './components/btn';
 @import './components/container';
 @import './components/modal';
 
+@import './layout/logo';
 @import './layout/header';
 @import './layout/studio/hero';
 @import './layout/studio/benefits';
@@ -16,3 +17,4 @@
 @import './layout/studio/customers';
 @import './layout/footer';
 @import './layout/portfolio/examples';
+@import './layout/portfolio/filter-btn';
