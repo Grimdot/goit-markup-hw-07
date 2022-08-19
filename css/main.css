@@ -274,7 +274,7 @@ img {
   border: 2px solid #212121;
   border-radius: 2px;
 }
-.modal__terms:checked + .modal__checkbox-icon {
+.modal__terms-checkbox:checked + .modal__checkbox-icon {
   width: 16px;
   height: 15px;
   background: #2196f3;

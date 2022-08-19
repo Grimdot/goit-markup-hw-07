@@ -158,7 +158,7 @@
   border: 2px solid $main-color;
   border-radius: 2px;
 
-  .modal__terms:checked + & {
+  .modal__terms-checkbox:checked + & {
     width: 16px;
     height: 15px;
 
